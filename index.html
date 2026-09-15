@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#103d3b">
+  <meta name="description" content="Jelajahi rancangan e-bike, dock, fasilitas baterai, dan hub MRT PulseLink dalam model 3D interaktif.">
+  <title>PulseLink — Jelajahi rancangan</title>
+  <link rel="icon" href="assets/pulselink-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/vendor/three-bundle.js"></script>
+  <script defer src="assets/catalog.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#explorer">Langsung ke model</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="PulseLink, halaman awal"><img src="assets/pulselink-symbol.svg" width="35" height="35" alt=""><span>PulseLink<span class="brand-caption">Mobilitas terhubung MRT</span></span></a>
+    <div class="header-context"><span class="route-mark" aria-hidden="true"></span>Jelajahi rancangan</div>
+    <button class="button primary capture" id="capture" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l2-3h4l2 3h4v13H4V7z"/><circle cx="12" cy="13" r="3.5"/></svg>Simpan gambar</button>
+  </header>
+  <main class="workspace" id="explorer" tabindex="-1">
+    <aside class="asset-rail" aria-labelledby="asset-heading">
+      <div class="rail-heading"><h2 id="asset-heading">Satu layanan.<br>Setiap bagiannya.</h2><p>Pilih objek untuk melihat detail.</p></div>
+      <nav id="asset-list" class="asset-list" aria-label="Pilih objek"></nav>
+      <div class="rail-note"><span class="small-symbol" aria-hidden="true">↗</span><p>Menghubungkan perjalanan<br>dari stasiun ke tujuan.</p></div>
+    </aside>
+    <section class="model-workspace" aria-labelledby="asset-title">
+      <div class="model-heading"><div><p class="eyebrow" id="asset-category">Rancangan layanan</p><h1 id="asset-title">PulseLink</h1></div><span class="prototype-label">Prototipe konsep</span></div>
+      <div class="model-frame" id="model-frame" aria-busy="true">
+        <div id="stage" class="stage"></div>
+        <div class="stage-label" aria-hidden="true"><span id="stage-asset">PulseLink</span><span id="stage-state">Memuat model</span></div>
+        <div id="loading" class="stage-overlay loading-overlay"><span class="loader" aria-hidden="true"></span><p id="loading-text">Menyiapkan model…</p></div>
+        <div id="fallback" class="stage-overlay fallback-overlay" hidden><img id="fallback-image" width="1000" height="700" alt="Pratinjau statis rancangan"><div class="fallback-message"><h2>Tampilan 3D belum tersedia</h2><p id="error-text">Aktifkan akselerasi grafis pada browser, lalu coba lagi.</p><button class="button primary" id="retry">Coba lagi</button></div></div>
+        <div id="empty" class="stage-overlay empty-overlay" hidden><div><h2>Semua komponen disembunyikan</h2><p>Tampilkan kembali untuk melanjutkan eksplorasi.</p><button class="button primary" id="empty-show-all">Tampilkan semua</button></div></div>
+        <div class="view-controls" role="group" aria-label="Sudut pandang"><button data-view="hero" aria-pressed="true">Perspektif</button><button data-view="front" aria-pressed="false">Depan</button><button data-view="side" aria-pressed="false">Samping</button><button data-view="top" aria-pressed="false">Atas</button></div>
+        <div class="axis-key" aria-hidden="true"><span class="axis-dot"></span><span id="view-name">Perspektif</span></div>
+      </div>
+      <div class="state-row"><span class="control-label">Konfigurasi</span><div id="state-list" class="state-list" role="group" aria-label="Pilih konfigurasi"></div></div>
+      <div class="movement-row"><p>Geser untuk memutar · Gulir untuk memperbesar</p><div class="movement-controls" role="group" aria-label="Kontrol model tanpa menyeret"><button data-turn="left" aria-label="Putar ke kiri" title="Putar ke kiri">↶</button><button data-turn="right" aria-label="Putar ke kanan" title="Putar ke kanan">↷</button><button data-turn="up" aria-label="Putar ke atas" title="Putar ke atas">↑</button><button data-turn="down" aria-label="Putar ke bawah" title="Putar ke bawah">↓</button><span class="control-divider" aria-hidden="true"></span><button data-zoom="1.2" aria-label="Perbesar" title="Perbesar">+</button><button data-zoom="0.833333" aria-label="Perkecil" title="Perkecil">−</button><button id="reset-view" class="reset-button">Atur ulang</button></div></div>
+      <div class="status-row"><span class="status-indicator" aria-hidden="true"></span><p id="status" role="status" aria-live="polite">Memuat katalog…</p></div>
+    </section>
+    <aside class="detail-panel" aria-labelledby="detail-heading">
+      <section class="object-details"><p class="eyebrow">Tentang objek</p><h2 id="detail-heading">Detail rancangan</h2><p id="description">Model konsep perangkat dan fasilitas PulseLink.</p><div class="state-note"><span aria-hidden="true">◈</span><p id="state-note">Pilih konfigurasi untuk melihat hubungan antarbagian.</p></div></section>
+      <section class="dimensions" aria-labelledby="dimension-heading"><h3 id="dimension-heading">Ukuran model</h3><dl><div><dt>Panjang</dt><dd id="dimension-x">—</dd></div><div><dt>Tinggi</dt><dd id="dimension-y">—</dd></div><div><dt>Lebar</dt><dd id="dimension-z">—</dd></div></dl><p>Dimensi ilustratif, dapat disesuaikan.</p></section>
+      <section class="parts-section" aria-labelledby="parts-heading"><div class="parts-heading"><h3 id="parts-heading">Komponen</h3><button class="text-button" id="show-all">Tampilkan semua</button></div><div id="parts" class="parts"></div><p id="parts-empty" hidden>Tidak ada komponen terpisah untuk konfigurasi ini.</p></section>
+      <details class="help"><summary>Cara menjelajahi</summary><p>Pilih objek dan konfigurasi. Gunakan kotak centang untuk menyembunyikan bagian. Tombol sudut pandang dan kontrol putar dapat digunakan tanpa menyeret model.</p><p>“Simpan gambar” mengunduh tampilan saat ini sebagai PNG. Gambar mencakup konfigurasi dan komponen yang sedang terlihat.</p></details>
+    </aside>
+  </main>
+  <footer class="site-footer"><span>PulseLink <span aria-hidden="true">/</span> Eksplorasi perangkat &amp; hub</span><span>Visualisasi konsep layanan</span></footer>
+  <noscript><div class="no-script"><h1>Aktifkan JavaScript untuk menjelajahi model</h1><p>Pratinjau statis tetap dapat dilihat di bawah ini.</p><img src="assets/previews/ebike.png" alt="Pratinjau statis sepeda PulseLink" width="1000" height="700"></div></noscript>
+</body>
+</html>

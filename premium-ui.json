@@ -1,0 +1,10 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["index.html", "assets/app.js", "assets/style.css"],
+  "locale": "id-ID",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Scrollbar", "Toast"],
+  "requiredCommands": ["static"],
+  "commands": {"static": "python verify_viewer.py"},
+  "evidence": {"failurePaths": "verification.md"}
+}

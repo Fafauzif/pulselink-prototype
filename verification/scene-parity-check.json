@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "check": "Mesh position/normal/index bytes, world transforms, group, and presentation material values match each original native GLB after shared-scene merging.",
+  "models": [
+    {
+      "key": "ebike_assembled",
+      "meshes": 75,
+      "passed": true
+    },
+    {
+      "key": "ebike_service_open",
+      "meshes": 75,
+      "passed": true
+    },
+    {
+      "key": "ebike_exploded",
+      "meshes": 75,
+      "passed": true
+    },
+    {
+      "key": "dock_empty",
+      "meshes": 17,
+      "passed": true
+    },
+    {
+      "key": "dock_docked",
+      "meshes": 92,
+      "passed": true
+    },
+    {
+      "key": "dock_exploded",
+      "meshes": 17,
+      "passed": true
+    },
+    {
+      "key": "helmet_assembled",
+      "meshes": 8,
+      "passed": true
+    },
+    {
+      "key": "helmet_locker_closed",
+      "meshes": 138,
+      "passed": true
+    },
+    {
+      "key": "helmet_locker_open",
+      "meshes": 138,
+      "passed": true
+    },
+    {
+      "key": "battery_service_closed",
+      "meshes": 73,
+      "passed": true
+    },
+    {
+      "key": "battery_service_open",
+      "meshes": 73,
+      "passed": true
+    },
+    {
+      "key": "hub_mrt_assembled",
+      "meshes": 515,
+      "passed": true
+    },
+    {
+      "key": "hub_mrt_plan_cutaway",
+      "meshes": 509,
+      "passed": true
+    },
+    {
+      "key": "hub_destination_assembled",
+      "meshes": 515,
+      "passed": true
+    },
+    {
+      "key": "hub_destination_plan_cutaway",
+      "meshes": 509,
+      "passed": true
+    },
+    {
+      "key": "system_assembled",
+      "meshes": 1124,
+      "passed": true
+    },
+    {
+      "key": "system_plan_cutaway",
+      "meshes": 1112,
+      "passed": true
+    }
+  ]
+}

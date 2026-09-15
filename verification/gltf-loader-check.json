@@ -1,0 +1,455 @@
+{
+  "passed": true,
+  "check": "Actual bundled GLTFLoader parsing, group extras, and catalog-bound agreement; no browser/WebGL execution",
+  "library_sha256": "f598f503a8b258cc887a1d1cd163e95567a0b241cecbac1758a8e7a0cf3d64bb",
+  "format": "shared multi-scene GLB",
+  "shared_scene_count": 17,
+  "model_count": 17,
+  "models": [
+    {
+      "key": "ebike_assembled",
+      "scene_index": 0,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 75,
+      "groupedMeshCount": 75,
+      "groups": [
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking"
+      ],
+      "bounds_m": [
+        1.8736799955368042,
+        1.1085000400780702,
+        0.6520599722862245
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "ebike_service_open",
+      "scene_index": 1,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 75,
+      "groupedMeshCount": 75,
+      "groups": [
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking"
+      ],
+      "bounds_m": [
+        2.291178804412484,
+        1.1085000400780702,
+        0.6520599722862245
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "ebike_exploded",
+      "scene_index": 2,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 75,
+      "groupedMeshCount": 75,
+      "groups": [
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking"
+      ],
+      "bounds_m": [
+        2.5550000128895043,
+        1.4785000400780703,
+        0.867000000998378
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "dock_empty",
+      "scene_index": 3,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 17,
+      "groupedMeshCount": 17,
+      "groups": [
+        "dock",
+        "guide"
+      ],
+      "bounds_m": [
+        0.6550000160932541,
+        0.9890000401064756,
+        0.6024999916553498
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "dock_docked",
+      "scene_index": 4,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 92,
+      "groupedMeshCount": 92,
+      "groups": [
+        "dock",
+        "guide",
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking"
+      ],
+      "bounds_m": [
+        1.8736799955368042,
+        1.1085000400780705,
+        0.8310299813747406
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "dock_exploded",
+      "scene_index": 5,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 17,
+      "groupedMeshCount": 17,
+      "groups": [
+        "dock",
+        "guide"
+      ],
+      "bounds_m": [
+        0.6550000160932541,
+        1.1990000401064758,
+        0.6024999916553498
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "helmet_assembled",
+      "scene_index": 6,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 8,
+      "groupedMeshCount": 8,
+      "groups": [
+        "shell",
+        "liner",
+        "straps"
+      ],
+      "bounds_m": [
+        0.3042348474264145,
+        0.2507089572027326,
+        0.23190000653266915
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "helmet_locker_closed",
+      "scene_index": 7,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 138,
+      "groupedMeshCount": 138,
+      "groups": [
+        "body",
+        "interior",
+        "labels",
+        "doors",
+        "shell",
+        "liner",
+        "straps"
+      ],
+      "bounds_m": [
+        1.440000057220459,
+        1.9000000357627873,
+        0.6560000143945222
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "helmet_locker_open",
+      "scene_index": 8,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 138,
+      "groupedMeshCount": 138,
+      "groups": [
+        "body",
+        "interior",
+        "labels",
+        "doors",
+        "shell",
+        "liner",
+        "straps"
+      ],
+      "bounds_m": [
+        1.440000057220459,
+        1.9000000357627873,
+        1.0716784632856362
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "battery_service_closed",
+      "scene_index": 9,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 73,
+      "groupedMeshCount": 73,
+      "groups": [
+        "body",
+        "interior",
+        "labels",
+        "batteries",
+        "doors"
+      ],
+      "bounds_m": [
+        1.0499999523162842,
+        1.7000000476837163,
+        0.6904999935068193
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "battery_service_open",
+      "scene_index": 10,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 73,
+      "groupedMeshCount": 73,
+      "groups": [
+        "body",
+        "interior",
+        "labels",
+        "batteries",
+        "doors"
+      ],
+      "bounds_m": [
+        1.4334361057593592,
+        1.7000000476837163,
+        1.111638558619494
+      ],
+      "catalog_bound_tolerance_mm": 3
+    },
+    {
+      "key": "hub_mrt_assembled",
+      "scene_index": 11,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 515,
+      "groupedMeshCount": 515,
+      "groups": [
+        "ground",
+        "dock",
+        "guide",
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking",
+        "body",
+        "interior",
+        "labels",
+        "doors",
+        "shell",
+        "liner",
+        "straps",
+        "structure",
+        "wayfinding",
+        "furniture",
+        "roof"
+      ],
+      "bounds_m": [
+        10,
+        3.0120000252500194,
+        6.09999990463257
+      ],
+      "catalog_bound_tolerance_mm": 10
+    },
+    {
+      "key": "hub_mrt_plan_cutaway",
+      "scene_index": 12,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 509,
+      "groupedMeshCount": 509,
+      "groups": [
+        "ground",
+        "dock",
+        "guide",
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking",
+        "body",
+        "interior",
+        "labels",
+        "doors",
+        "shell",
+        "liner",
+        "straps",
+        "structure",
+        "wayfinding",
+        "furniture"
+      ],
+      "bounds_m": [
+        10,
+        2.8840000182390226,
+        6.09999990463257
+      ],
+      "catalog_bound_tolerance_mm": 10.0007
+    },
+    {
+      "key": "hub_destination_assembled",
+      "scene_index": 13,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 515,
+      "groupedMeshCount": 515,
+      "groups": [
+        "ground",
+        "dock",
+        "guide",
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking",
+        "body",
+        "interior",
+        "labels",
+        "doors",
+        "shell",
+        "liner",
+        "straps",
+        "structure",
+        "wayfinding",
+        "furniture",
+        "roof"
+      ],
+      "bounds_m": [
+        10,
+        3.0120000252500194,
+        6.09999990463257
+      ],
+      "catalog_bound_tolerance_mm": 10
+    },
+    {
+      "key": "hub_destination_plan_cutaway",
+      "scene_index": 14,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 509,
+      "groupedMeshCount": 509,
+      "groups": [
+        "ground",
+        "dock",
+        "guide",
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking",
+        "body",
+        "interior",
+        "labels",
+        "doors",
+        "shell",
+        "liner",
+        "straps",
+        "structure",
+        "wayfinding",
+        "furniture"
+      ],
+      "bounds_m": [
+        10,
+        2.8840000182390226,
+        6.09999990463257
+      ],
+      "catalog_bound_tolerance_mm": 10.0007
+    },
+    {
+      "key": "system_assembled",
+      "scene_index": 15,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 1124,
+      "groupedMeshCount": 1124,
+      "groups": [
+        "ground",
+        "dock",
+        "guide",
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking",
+        "body",
+        "interior",
+        "labels",
+        "doors",
+        "shell",
+        "liner",
+        "straps",
+        "structure",
+        "wayfinding",
+        "furniture",
+        "roof",
+        "batteries",
+        "route",
+        "context"
+      ],
+      "bounds_m": [
+        28.5,
+        3.4049999117851275,
+        12.10000038146973
+      ],
+      "catalog_bound_tolerance_mm": 28.5
+    },
+    {
+      "key": "system_plan_cutaway",
+      "scene_index": 16,
+      "sha256": "b47b6d9e80d55a2add610869571eb7f8514441afb12ab0cfaa99005d7d1fd9a1",
+      "meshCount": 1112,
+      "groupedMeshCount": 1112,
+      "groups": [
+        "ground",
+        "dock",
+        "guide",
+        "wheels",
+        "frame",
+        "controls",
+        "basket",
+        "battery",
+        "drive",
+        "docking",
+        "body",
+        "interior",
+        "labels",
+        "doors",
+        "shell",
+        "liner",
+        "straps",
+        "structure",
+        "wayfinding",
+        "furniture",
+        "batteries",
+        "route",
+        "context"
+      ],
+      "bounds_m": [
+        28.5,
+        3.4049999117851275,
+        12.10000038146973
+      ],
+      "catalog_bound_tolerance_mm": 28.501900000000003
+    }
+  ]
+}
